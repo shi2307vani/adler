@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#eed5cb","on-primary-fixed-variant":"#573974","on-tertiary-container":"#539544","secondary-fixed":"#ffdea5","on-secondary-fixed":"#261900","on-error":"#ffffff","on-tertiary-fixed":"#012200","on-tertiary":"#ffffff","inverse-on-surface":"#ffede6","surface-container-highest":"#f7ddd3","primary-container":"#2b0d47","on-secondary-fixed-variant":"#5d4201","surface-container-high":"#fde3d8","on-secondary-container":"#785a1a","secondary-fixed-dim":"#e9c176","inverse-primary":"#dcb8fc","surface-variant":"#f7ddd3","tertiary":"#000500","outline":"#7c747f","surface":"#fff8f6","on-error-container":"#93000a","surface-tint":"#70518d","tertiary-container":"#012400","outline-variant":"#cdc3cf","primary-fixed":"#f0dbff","on-primary-container":"#9878b7","surface-bright":"#fff8f6","error":"#ba1a1a","on-background":"#261912","on-surface":"#261912","surface-container":"#ffeae1","error-container":"#ffdad6","on-primary-fixed":"#290a45","background":"#fff8f6","surface-container-low":"#fff1eb","on-primary":"#ffffff","tertiary-fixed":"#adf598","surface-container-lowest":"#ffffff","secondary":"#775a19","primary":"#080016","inverse-surface":"#3c2d26","tertiary-fixed-dim":"#92d87f","on-tertiary-fixed-variant":"#0f5308","secondary-container":"#fed488","on-surface-variant":"#4b454e","on-secondary":"#ffffff","primary-fixed-dim":"#dcb8fc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1.25rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"2.5rem","margin":"3rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1.5rem","space-md":"1rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Syne"],"headline-xl-mobile":["Syne"],"headline-md":["Syne"],"headline-sm":["Syne"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-xl":["Syne"],"headline-lg-mobile":["Syne"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(35,22,16,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><a class="flex items-center gap-3" data-path="home" href="#"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-secondary-fixed text-2xl">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">ADLER ELIXIRS</span><span class="font-label-sm text-label-sm text-secondary uppercase -mt-1 tracking-widest">FOCUS LIKE AN EAGLE</span></div></a><nav class="hidden xl:flex items-center gap-8" data-active-classes="text-primary-container font-semibold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a aria-current="page" class="transition-colors text-primary-container font-semibold" data-path="our-products" href="#">Our Products</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="why-adler" href="#">Why ADLER</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="partner-with-us" href="#">Partner With Us</a></nav><div class="flex items-center gap-3"><a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-secondary-container text-on-secondary-fixed font-label-md text-label-md uppercase tracking-wider hover:bg-secondary-fixed transition-all shadow-sm" data-path="our-products" href="#">EXPLORE PRODUCTS</a><a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary-container font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container transition-all shadow-sm" data-path="partner-with-us" href="#">PARTNER ENQUIRIES</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-2"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Page Hero / Introduction Section -->
+<section class="relative w-full pt-8 pb-16 px-6 lg:px-12 max-w-7xl mx-auto overflow-hidden">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="absolute -top-24 right-1/4 w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 -left-12 w-80 h-80 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high border-0 shadow-sm text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings: 'FILL' 1;">stars</span>
+        Master Formulations • Batch 04 Release
+      </div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">
+        THE ADLER ELIXIR PORTFOLIO
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        Caffeinated Functional Formulations Engineered for Uncompromising Mental Clarity &amp; Sensory Refinement.
+      </p>
+<!-- Category Filter Pills -->
+<div class="pt-4 flex flex-wrap items-center justify-center gap-2.5" id="product-filters">
+<button class="px-5 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary-container text-on-primary" type="button">
+          All Formulations
+        </button>
+<a class="px-5 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container" href="#mix-berry-sparks">
+          Mix Berry Sparks (250ml)
+        </a>
+<a class="px-5 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container" href="#peach-sparks">
+          Peach Sparks (250ml)
+        </a>
+<button class="px-5 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface-container-lowest text-on-surface-variant opacity-60 cursor-not-allowed" type="button">
+          Collector Editions (Reserved)
+        </button>
+</div>
+</div>
+</section>
+<!-- Product 1: Mix Berry Sparks (Bespoke Asymmetric Layout) -->
+<section class="w-full py-16 px-6 lg:px-12 max-w-7xl mx-auto" id="mix-berry-sparks">
+<div class="relative rounded-2xl bg-surface-container-lowest shadow-xl overflow-hidden">
+<!-- Decorative Backdrop Accent -->
+<div class="absolute top-0 right-0 w-2/5 h-full bg-gradient-to-l from-primary-fixed/30 to-transparent pointer-events-none hidden lg:block"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 p-8 lg:p-14 items-center">
+<!-- Visual Column -->
+<div class="lg:col-span-5 relative flex flex-col items-center justify-center">
+<div class="relative w-full max-w-md aspect-[4/5] rounded-xl overflow-hidden shadow-2xl group">
+<img alt="Mix Berry Sparks 250ml can surrounded by fluid cosmic purple and gold swirls" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP3bRU4YkN-kP9gwlaeW9rBTb8wcElRjpjpG9tVxmytLMN5XdSjfaPAPzhGeDzDXLG1WnD-4LvGLiK_8IpZEO0Yk2pKNGvxVaCUXksHKhUSvGtmzpl9mo4nN_AfdoPk_ud-rk7rFVnLHEjcf8LefKyvJWF-xkdEyyFcMsSJrCGYFbHj2vGAT95uRjzotOD4GMpxg1aEUaoxOucKOKH3f9USdvdcIzirWFk1fUVfnfAEuGxRvgFo-q4XxqvaFabrM75LTY"/>
+<!-- Veg Mark Float -->
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-md">
+<span class="w-3.5 h-3.5 rounded-sm bg-white p-0.5 flex items-center justify-center shadow-xs">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container block"></span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">100% Certified Veg</span>
+</div>
+<!-- Dynamic Micro Spec Badge -->
+<div class="absolute bottom-4 right-4 bg-primary-container/95 text-on-primary backdrop-blur-md px-4 py-2 rounded-lg shadow-lg">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Neural Formula</p>
+<p class="font-headline-sm text-headline-sm leading-tight text-white">80mg Caffeine</p>
+</div>
+</div>
+</div>
+<!-- Spec & Commerce Column -->
+<div class="lg:col-span-7 flex flex-col space-y-6">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                Flagship Botanical Caffeinated Elixir
+              </span>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase font-semibold">
+                Batch 04 Ready
+              </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+              Mix Berry Sparks
+            </h2>
+<p class="font-body-md text-body-md text-secondary font-semibold">
+              Wild Mountain Berries &amp; Crisp Blackcurrant • 250 ml Slim Aluminium Can
+            </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Formulated for deep computational flow and cognitive precision. Our flagship infusion couples crisp wild blackberry vibrancy with green tea-derived clean caffeine, moderated by high-purity L-Theanine for an unshakeable, zero-jitter state of mind.
+          </p>
+<!-- Approved Biochemical Specs (Mosaic Grid) -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-1.5 text-primary-container mb-1">
+<span class="material-symbols-outlined text-lg">bolt</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Energy</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary">80 mg</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Green Tea Leaf Extract</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-1.5 text-secondary mb-1">
+<span class="material-symbols-outlined text-lg">psychology</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Calm Focus</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary">160 mg</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">L-Theanine Synergy</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-1.5 text-on-tertiary-container mb-1">
+<span class="material-symbols-outlined text-lg">verified</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Integrity</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary">0g Sugar</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">No Aspartame / Keto</p>
+</div>
+</div>
+<!-- Tasting Notes Sensory Palette Bar -->
+<div class="p-4 rounded-xl bg-surface-container-high shadow-inner space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-primary">Sensory Architecture</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Champagne Carbonation 3.2 vol</span>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1 font-body-sm text-body-sm">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-semibold shadow-xs">Top: Alpine Blackberry</span>
+<span class="text-outline">→</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-semibold shadow-xs">Core: Velvety Wild Raspberry</span>
+<span class="text-outline">→</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-semibold shadow-xs">Finish: Sparkling Crisp Tannin</span>
+</div>
+</div>
+<!-- Pack Sizing Selector -->
+<div class="space-y-3 pt-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant block font-semibold">Select Packaging Unit</span>
+<div class="grid grid-cols-3 gap-3" id="pack-selector-berry">
+<button class="pack-opt-berry p-3 rounded-xl bg-surface-container-low text-left transition-all hover:bg-surface-container active-pack shadow-sm" data-price="₹125" type="button">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Single Can</div>
+<div class="font-headline-sm text-headline-sm text-primary mt-0.5">₹125</div>
+<div class="font-label-sm text-label-sm text-secondary">$4.25 USD</div>
+</button>
+<button class="pack-opt-berry p-3 rounded-xl bg-surface-container-low text-left transition-all hover:bg-surface-container shadow-sm" data-price="₹480" type="button">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">4-Pack Precision</div>
+<div class="font-headline-sm text-headline-sm text-primary mt-0.5">₹480</div>
+<div class="font-label-sm text-label-sm text-secondary">₹120 / can</div>
+</button>
+<button class="pack-opt-berry p-3 rounded-xl bg-surface-container-low text-left transition-all hover:bg-surface-container shadow-sm relative overflow-hidden" data-price="₹1,350" type="button">
+<div class="absolute top-1 right-2 text-[9px] font-bold uppercase tracking-wider text-on-tertiary-container bg-tertiary-fixed px-1.5 py-0.5 rounded">Best Value</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">12-Can Collector</div>
+<div class="font-headline-sm text-headline-sm text-primary mt-0.5">₹1,350</div>
+<div class="font-label-sm text-label-sm text-secondary">₹112 / can</div>
+</button>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+<button class="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-secondary-container text-on-secondary-fixed font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-fixed shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span>BUY ONLINE • <span id="berry-price-display">₹125</span></span>
+</button>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-surface-container-lowest text-primary-container font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-container shadow-sm transition-all" data-path="partner-with-us" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+<span>PRODUCT ENQUIRY</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product 2: Peach Sparks (Asymmetric Inverted Layout) -->
+<section class="w-full py-16 px-6 lg:px-12 max-w-7xl mx-auto" id="peach-sparks">
+<div class="relative rounded-2xl bg-surface-container-lowest shadow-xl overflow-hidden">
+<!-- Decorative Warm Backdrop -->
+<div class="absolute top-0 left-0 w-2/5 h-full bg-gradient-to-r from-secondary-fixed/40 to-transparent pointer-events-none hidden lg:block"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 p-8 lg:p-14 items-center">
+<!-- Spec & Commerce Column (Left on Desktop) -->
+<div class="lg:col-span-7 flex flex-col space-y-6 order-2 lg:order-1">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                Hydration &amp; Cognitive Renewal Elixir
+              </span>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm uppercase font-semibold">
+                Electrolyte Infused
+              </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+              Peach Sparks
+            </h2>
+<p class="font-body-md text-body-md text-secondary font-semibold">
+              Sun-Kissed White Peach &amp; Himalayan Mineral Effervescence • 250 ml Slim Aluminium Can
+            </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Engineered for physical rejuvenation, mental equilibrium, and prolonged sustained focus. Combines naturally extracted white peach essence with pure Himalayan pink mineral electrolytes and balanced 60mg caffeine to recharge without spiking cortisol or blood glucose.
+          </p>
+<!-- Approved Specs Mosaic -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-1.5 text-secondary mb-1">
+<span class="material-symbols-outlined text-lg">water_drop</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Hydration</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary">Pink Salt</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">K, Mg, Na Electrolytes</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-1.5 text-primary-container mb-1">
+<span class="material-symbols-outlined text-lg">spa</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Botanical</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary">60 mg</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Smooth Plant Caffeine</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-1.5 text-on-tertiary-container mb-1">
+<span class="material-symbols-outlined text-lg">nature</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Zero Sugar</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary">100%</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Naturally Sweetened</p>
+</div>
+</div>
+<!-- Sensory Profile -->
+<div class="p-4 rounded-xl bg-surface-container-high shadow-inner space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-primary">Sensory Architecture</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Micro-Fine Champagne Effervescence</span>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1 font-body-sm text-body-sm">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-semibold shadow-xs">Top: Peach Blossom Bouquet</span>
+<span class="text-outline">→</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-semibold shadow-xs">Core: Stone Fruit Nectar</span>
+<span class="text-outline">→</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-semibold shadow-xs">Finish: Subtle Himalayan Mineral Cleanse</span>
+</div>
+</div>
+<!-- Pack Sizing Selector -->
+<div class="space-y-3 pt-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant block font-semibold">Select Packaging Unit</span>
+<div class="grid grid-cols-3 gap-3" id="pack-selector-peach">
+<button class="pack-opt-peach p-3 rounded-xl bg-surface-container-low text-left transition-all hover:bg-surface-container active-pack shadow-sm" data-price="₹125" type="button">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Single Can</div>
+<div class="font-headline-sm text-headline-sm text-primary mt-0.5">₹125</div>
+<div class="font-label-sm text-label-sm text-secondary">$4.25 USD</div>
+</button>
+<button class="pack-opt-peach p-3 rounded-xl bg-surface-container-low text-left transition-all hover:bg-surface-container shadow-sm" data-price="₹480" type="button">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">4-Pack Precision</div>
+<div class="font-headline-sm text-headline-sm text-primary mt-0.5">₹480</div>
+<div class="font-label-sm text-label-sm text-secondary">₹120 / can</div>
+</button>
+<button class="pack-opt-peach p-3 rounded-xl bg-surface-container-low text-left transition-all hover:bg-surface-container shadow-sm relative overflow-hidden" data-price="₹1,350" type="button">
+<div class="absolute top-1 right-2 text-[9px] font-bold uppercase tracking-wider text-on-tertiary-container bg-tertiary-fixed px-1.5 py-0.5 rounded">Best Value</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">12-Can Collector</div>
+<div class="font-headline-sm text-headline-sm text-primary mt-0.5">₹1,350</div>
+<div class="font-label-sm text-label-sm text-secondary">₹112 / can</div>
+</button>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+<button class="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-secondary-container text-on-secondary-fixed font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-fixed shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span>BUY ONLINE • <span id="peach-price-display">₹125</span></span>
+</button>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-surface-container-lowest text-primary-container font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-container shadow-sm transition-all" data-path="partner-with-us" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+<span>PRODUCT ENQUIRY</span>
+</a>
+</div>
+</div>
+<!-- Visual Column (Right on Desktop) -->
+<div class="lg:col-span-5 relative flex flex-col items-center justify-center order-1 lg:order-2">
+<div class="relative w-full max-w-md aspect-[4/5] rounded-xl overflow-hidden shadow-2xl group">
+<img alt="Peach Sparks 250ml can resting on reflective glass pedestal with warm golden aura" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UWG6St4Y6ZQJZbMb6IWQ-OMvlSUUKj3x1JQwu5IZ3YJLY7YscSMxUGJZi1fAdalaGKMCBVM1B-rDf9u3EA1mt0dHhH9eZ4k2uA1GwQ5sdclh8vn0c_Ob12aDFZMRrEBs00YCwz7O0hKaHVy6I5MIxWqtV8XK0-jJUk_dePgYR2NoZDQhaQUtUPxU0gH-VIgawL610nSVlDpVpXN7jRAWbrY97vxZSbOeXGWNNmx1WCWZw5T8gl0orD5L50"/>
+<!-- Veg Mark Float -->
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-md">
+<span class="w-3.5 h-3.5 rounded-sm bg-white p-0.5 flex items-center justify-center shadow-xs">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container block"></span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">100% Certified Veg</span>
+</div>
+<!-- Dynamic Micro Spec Badge -->
+<div class="absolute bottom-4 left-4 bg-primary-container/95 text-on-primary backdrop-blur-md px-4 py-2 rounded-lg shadow-lg">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Electrolyte Restorative</p>
+<p class="font-headline-sm text-headline-sm leading-tight text-white">60mg Clean Caffeine</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Comparative Nutritional & Biochemical Matrix -->
+<section class="w-full py-20 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div class="space-y-3">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Biochemical Transparency</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+          Nutritional &amp; Formulation Matrix
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Complete disclosure of bio-active extracts, mineral electrolytes, and nutritional telemetry per 250ml serving.
+        </p>
+</div>
+<!-- Quick Telemetry Micro Metric -->
+<div class="flex items-center gap-3 bg-surface-container-low px-5 py-3 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-2xl">eco</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-bold">FSSAI Certified Lab</span>
+<span class="font-headline-sm text-headline-sm text-primary">100% Traceable Botanicals</span>
+</div>
+</div>
+</div>
+<!-- Interactive Comparison Bento Table -->
+<div class="w-full rounded-2xl bg-surface-container-lowest shadow-xl overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[700px]">
+<thead>
+<tr class="bg-surface-container-high/60">
+<th class="p-6 font-label-md text-label-md uppercase tracking-wider text-primary font-bold w-1/3">
+              Biochemical Metric
+            </th>
+<th class="p-6 font-headline-sm text-headline-sm text-primary-container w-1/3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span>Mix Berry Sparks (250ml)</span>
+</div>
+</th>
+<th class="p-6 font-headline-sm text-headline-sm text-secondary w-1/3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span>Peach Sparks (250ml)</span>
+</div>
+</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface divide-y-0">
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-6 font-semibold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">bolt</span>
+              Caffeine Extraction Source
+            </td>
+<td class="p-6 text-on-surface-variant font-medium">80mg Natural Green Tea Leaf (Camellia Sinensis)</td>
+<td class="p-6 text-on-surface-variant font-medium">60mg Organic Raw Green Coffee &amp; Tea Botanical</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/40 transition-colors">
+<td class="p-6 font-semibold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">psychology</span>
+              Cognitive Synergy Factor
+            </td>
+<td class="p-6 text-primary-container font-semibold">160mg Suntheanine® (2:1 Ratio for Zero Jitters)</td>
+<td class="p-6 text-secondary font-semibold">100mg Suntheanine® (Synergistic Calm Baseline)</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-6 font-semibold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">water_drop</span>
+              Electrolyte &amp; Mineral Core
+            </td>
+<td class="p-6 text-on-surface-variant">Trace Ocean Minerals (Bio-Hydration Active)</td>
+<td class="p-6 text-on-surface-variant font-semibold text-primary">Himalayan Pink Salt (Full-Spectrum K, Mg, Na)</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/40 transition-colors">
+<td class="p-6 font-semibold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">fitness_center</span>
+              Total Calories &amp; Added Sugars
+            </td>
+<td class="p-6 text-on-tertiary-container font-bold">0 kcal • 0g Added Sugar</td>
+<td class="p-6 text-on-tertiary-container font-bold">0 kcal • 0g Added Sugar</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-6 font-semibold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">medication</span>
+              Vitamin Complex Infusion
+            </td>
+<td class="p-6 text-on-surface-variant">Vitamins B3 (Niacin), B6 (Pyridoxine), B12</td>
+<td class="p-6 text-on-surface-variant">Vitamin C (Ascorbic Acid) + B-Complex Spectrum</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/40 transition-colors">
+<td class="p-6 font-semibold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">flag</span>
+              Intended Functional State
+            </td>
+<td class="p-6">
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase">
+                Deep Cognitive Flow &amp; High-Stakes Focus
+              </span>
+</td>
+<td class="p-6">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase">
+                Hydration Equilibrium &amp; Smooth Vitality
+              </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-6 font-semibold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">recycling</span>
+              Vessel Architecture
+            </td>
+<td class="p-6 text-on-surface-variant">100% Aerospace-Grade Slim Aluminium (Infinitely Recyclable)</td>
+<td class="p-6 text-on-surface-variant">100% Aerospace-Grade Slim Aluminium (Infinitely Recyclable)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Section 4: Visual Ingredient Mosaic & Sensory Science -->
+<section class="w-full py-16 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="rounded-2xl bg-surface-container p-8 lg:p-14 shadow-lg relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold shadow-xs">
+<span class="material-symbols-outlined text-secondary text-sm">science</span>
+            Precision Extraction Lab
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">
+            Crafted with No Compromises. From Himalayan Springs to Botanical Distillation.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Every drop of ADLER is formulated with supercritical CO2 herbal extractions and pristine Himalayan aquifer spring water. We eliminate crash-inducing synthetic taurines, excessive refined syrups, and abrasive artificial flavorings.
+          </p>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-primary-container text-lg">check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Micro-Filtered</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">7-stage mineralized water base</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Natural Alkalinity</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Optimal bio-available cellular uptake</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Mosaic Graphic Showcase -->
+<div class="lg:col-span-6 grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="h-44 rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Close up artisanal macro photograph of wild freshly harvested Himalayan berries with vibrant purple dew drops in soft morning daylight studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgk-Cu9PKGoc0UTXNNbs-frjqiJhP6e8rJj0dxPxvVCDATus3bvTL_h9k2-chMg_Dqly3GHESrP1YW8BiV7K6GCQVEMwXguJzYxmqNhZNMda1uSG9VMSN8PmPth1JWShYX32X77ekjkz9sSbGAUhhmEuUYCZUW-_p3q6JAzrxNGz6et1ZY6PfCDn2JHD2NR06UBwK_S5Z6QCEbkslmUgA522LpchXO8Zo-OTX-BhgmOY9op8fRbm_-QQ"/>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-md space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Cold-Pressed Flavours</span>
+<p class="font-headline-sm text-headline-sm text-primary">Authentic Nectar</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero synthetic candy flavorings or artificial dyes.</p>
+</div>
+</div>
+<div class="space-y-4 pt-6">
+<div class="p-5 rounded-xl bg-primary-container text-on-primary shadow-md space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-bold">1:2 Synergy Ratio</span>
+<p class="font-headline-sm text-headline-sm text-white">L-Theanine Lift</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">Proven alpha-wave stimulation for serene cognitive focus.</p>
+</div>
+<div class="h-44 rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" data-alt="Artisanal macro photography of ripe white peaches and pink Himalayan salt crystals resting on luxury satin marble counter bathed in warm golden hour sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwYo9M11QI-erwF3ymD4Wr_MCroH6M_FiYKF8iWXYa2T0zsrQanHImzeXepHQtXhsDKltUa_OgIVgIMheATT-wjSAdXLaTpNxfK6WjmcRvlNiZJFIcfYgLIJ_UYB6st9U_r2POIHa8Xl55rOkxceDSzasrYUOR9RuBJZycGY7tFvpY4Xa07XIXsAgCASz7kfVhjse6qfJlK-TsWiWXKgqdzKh0vWoYwBDFVEg7LzAo9Awrne-n75aYew"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Direct Concierge & Bulk Tasting Kit Banner -->
+<section class="w-full py-16 px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="relative rounded-2xl bg-primary-container text-on-primary p-8 lg:p-14 shadow-2xl overflow-hidden">
+<!-- Decorative Lighting Glows -->
+<div class="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 left-1/4 w-72 h-72 rounded-full bg-surface-tint/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="max-w-2xl space-y-4">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-on-primary-fixed-variant/40 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest font-semibold">
+<span class="material-symbols-outlined text-base">local_shipping</span>
+            B2B &amp; Corporate Hospitality Concierge
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-white font-bold leading-tight">
+            Experiencing ADLER for Your Business or Event?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
+            Order our curated Dual-Can Discovery Tasting Set for qualified corporate partners, high-end hospitality venues, gym directors, and luxury retail stockists.
+          </p>
+<div class="flex flex-wrap items-center gap-6 pt-2 font-label-md text-label-md text-secondary-fixed">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">check</span> Two 250ml Full Cans</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">check</span> Lab Specification Dossier</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">check</span> Priority Concierge Dispatch</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-secondary-container text-on-secondary-fixed font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-secondary-fixed shadow-lg transition-all text-center" data-path="partner-with-us" href="#">
+<span class="material-symbols-outlined text-xl">inventory_2</span>
+<span>REQUEST TASTING KIT</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-primary text-secondary-fixed font-label-lg text-label-lg uppercase tracking-wider hover:bg-primary/80 transition-all text-center" data-path="partner-with-us" href="#">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>VIP WhatsApp Desk</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initProductInteractions() {
+    // Dynamic pack pricing logic for Mix Berry
+    const berryOptions = document.querySelectorAll('.pack-opt-berry');
+    const berryDisplay = document.getElementById('berry-price-display');
+
+    berryOptions.forEach(btn => {
+      btn.addEventListener('click', () => {
+        berryOptions.forEach(b => {
+          b.classList.remove('bg-secondary-fixed/40', 'shadow-md');
+          b.classList.add('bg-surface-container-low');
+        });
+        btn.classList.remove('bg-surface-container-low');
+        btn.classList.add('bg-secondary-fixed/40', 'shadow-md');
+        if (berryDisplay && btn.dataset.price) {
+          berryDisplay.textContent = btn.dataset.price;
+        }
+      });
+    });
+
+    // Dynamic pack pricing logic for Peach Sparks
+    const peachOptions = document.querySelectorAll('.pack-opt-peach');
+    const peachDisplay = document.getElementById('peach-price-display');
+
+    peachOptions.forEach(btn => {
+      btn.addEventListener('click', () => {
+        peachOptions.forEach(b => {
+          b.classList.remove('bg-secondary-fixed/40', 'shadow-md');
+          b.classList.add('bg-surface-container-low');
+        });
+        btn.classList.remove('bg-surface-container-low');
+        btn.classList.add('bg-secondary-fixed/40', 'shadow-md');
+        if (peachDisplay && btn.dataset.price) {
+          peachDisplay.textContent = btn.dataset.price;
+        }
+      });
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container py-16 shadow-[0_1px_8px_rgba(35,22,16,0.04)]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"><div><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-secondary-fixed text-lg">bolt</span></div><span class="font-headline-sm text-headline-sm text-primary uppercase">ADLER BEVERAGES</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Where Health Meets Refreshment. India's premier caffeinated botanical elixirs, crafted for unrelenting clarity, natural sustained energy, and cognitive vitality.</p><div class="flex items-center gap-2"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm uppercase"><span class="material-symbols-outlined text-sm">spa</span> 100% Clean Caffeine</span><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase">Zero Crash</span></div></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Quick Links</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home Overview</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="about-us" href="#">The ADLER Heritage</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-products" href="#">Elixir Collection</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="why-adler" href="#">The Eagle Science</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">Global Distribution</a></li></ul></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Functional Line</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-products" href="#">Mix Berry Sparks 250ml</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-products" href="#">Peach Sparks 250ml</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-products" href="#">Upcoming Botanicals (Q4)</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="why-adler" href="#">Nutritional Integrity Lab</a></li></ul></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">B2B &amp; Concierge</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">Distributor Enquiries</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">Corporate &amp; Retailer Tie-ups</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">Gyms &amp; Premium Cafes</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">WhatsApp VIP Concierge</a></li></ul></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 ADLER BEVERAGES PVT. LTD. All rights reserved. Made in India for the Focused Mind.</p><div class="flex items-center gap-6 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-tertiary-fixed-dim text-sm">verified</span> GMP Certified</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-sm">eco</span> Botanical Sourced</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary-container text-sm">military_tech</span> FSSAI Approved</span></div></div></div></footer></body></html>

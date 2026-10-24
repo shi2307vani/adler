@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#eed5cb","on-primary-fixed-variant":"#573974","on-tertiary-container":"#539544","secondary-fixed":"#ffdea5","on-secondary-fixed":"#261900","on-error":"#ffffff","on-tertiary-fixed":"#012200","on-tertiary":"#ffffff","inverse-on-surface":"#ffede6","surface-container-highest":"#f7ddd3","primary-container":"#2b0d47","on-secondary-fixed-variant":"#5d4201","surface-container-high":"#fde3d8","on-secondary-container":"#785a1a","secondary-fixed-dim":"#e9c176","inverse-primary":"#dcb8fc","surface-variant":"#f7ddd3","tertiary":"#000500","outline":"#7c747f","surface":"#fff8f6","on-error-container":"#93000a","surface-tint":"#70518d","tertiary-container":"#012400","outline-variant":"#cdc3cf","primary-fixed":"#f0dbff","on-primary-container":"#9878b7","surface-bright":"#fff8f6","error":"#ba1a1a","on-background":"#261912","on-surface":"#261912","surface-container":"#ffeae1","error-container":"#ffdad6","on-primary-fixed":"#290a45","background":"#fff8f6","surface-container-low":"#fff1eb","on-primary":"#ffffff","tertiary-fixed":"#adf598","surface-container-lowest":"#ffffff","secondary":"#775a19","primary":"#080016","inverse-surface":"#3c2d26","tertiary-fixed-dim":"#92d87f","on-tertiary-fixed-variant":"#0f5308","secondary-container":"#fed488","on-surface-variant":"#4b454e","on-secondary":"#ffffff","primary-fixed-dim":"#dcb8fc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1.25rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"2.5rem","margin":"3rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1.5rem","space-md":"1rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Syne"],"headline-xl-mobile":["Syne"],"headline-md":["Syne"],"headline-sm":["Syne"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-xl":["Syne"],"headline-lg-mobile":["Syne"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(35,22,16,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><a class="flex items-center gap-3" data-path="home" href="#"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-secondary-fixed text-2xl">bolt</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">ADLER ELIXIRS</span><span class="font-label-sm text-label-sm text-secondary uppercase -mt-1 tracking-widest">FOCUS LIKE AN EAGLE</span></div></a><nav class="hidden xl:flex items-center gap-8" data-active-classes="text-primary-container font-semibold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-products" href="#">Our Products</a><a aria-current="page" class="transition-colors text-primary-container font-semibold" data-path="why-adler" href="#">Why ADLER</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="partner-with-us" href="#">Partner With Us</a></nav><div class="flex items-center gap-3"><a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-secondary-container text-on-secondary-fixed font-label-md text-label-md uppercase tracking-wider hover:bg-secondary-fixed transition-all shadow-sm" data-path="our-products" href="#">EXPLORE PRODUCTS</a><a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary-container font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container transition-all shadow-sm" data-path="partner-with-us" href="#">PARTNER ENQUIRIES</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-2"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- SECTION 0: HERO HEADER -->
+<section class="relative w-full overflow-hidden bg-surface-container-low py-20 lg:py-28">
+<div class="absolute -top-32 right-10 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="flex flex-col items-start max-w-4xl">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">THE ARCHITECTURE OF UNCOMPROMISING BEVERAGE CRAFT</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary uppercase tracking-tight mb-6">
+          WHY ADLER REWRITES THE DRINKING EXPERIENCE
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+          A radical synthesis of physiological performance, artisanal sensorial bliss, and responsible luxury packaging. We engineered an elixir that honours both your cognitive edge and your refined palate.
+        </p>
+<!-- Stats strip -->
+<div class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-xl bg-surface-container-lowest shadow-md">
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-primary">100%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Clean Botanicals</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-secondary">1:1</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">L-Theanine : Caffeine</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-on-tertiary-container">0g</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Added Refined Sugar</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg text-primary">48-Pt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Spectroscopy Tested</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: DISTINCTIVE, MULTI-LAYERED FLAVOURS -->
+<section class="w-full py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Narrative & Sensory Architecture -->
+<div class="lg:col-span-6 flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold mb-3">01 // Distinctive, Multi-Layered Flavours</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-6">
+            ELEVATED BOTANICALS OVER INDUSTRIAL SYRUPS
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Breaking away from aggressive medicinal syrups, battery-acid aftertastes, and oversweetened industrial sodas. ADLER extracts nuance from real botanical flora—wild Himalayan berries, crisp hand-pressed blackcurrants, and sun-kissed white peaches paired with a micro-fine champagne effervescence.
+          </p>
+<!-- Sensory Tasting Arc -->
+<div class="space-y-4 mt-4">
+<div class="p-5 rounded-lg bg-surface-container shadow-sm flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed text-xl">bubble_chart</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Top Notes // 0.0 – 1.5s</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vibrant floral aromatics, tart Alpine bilberry, and crisp mountain white peach aroma delivered on fine bubbles.</p>
+</div>
+</div>
+<div class="p-5 rounded-lg bg-surface-container shadow-sm flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-xl">spa</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Mid Palate // 1.5 – 4.0s</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Smooth polyphenolic depth from ceremonial green tea extract; silky botanical body without syrupy coating.</p>
+</div>
+</div>
+<div class="p-5 rounded-lg bg-surface-container shadow-sm flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-xl">clean_hands</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Clean Dry Finish // Post-Sip</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Subtle citric snap, zero tongue fatigue, zero sugar cloy, leaving the throat refreshed and receptive.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Sensory Wheel Card & Visual Showcase -->
+<div class="lg:col-span-6 flex flex-col gap-6">
+<div class="relative rounded-2xl overflow-hidden bg-primary-container p-8 shadow-xl text-on-primary">
+<div class="flex items-center justify-between mb-8">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Sensory Radar Matrix</span>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-highest/20 text-secondary-fixed font-semibold">BATCH NO. 882</span>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 justify-center py-4">
+<!-- Radial SVG chart -->
+<div class="relative w-52 h-52 shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 160 160">
+<circle class="text-primary opacity-30" cx="80" cy="80" fill="transparent" r="65" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-secondary-fixed" cx="80" cy="80" fill="transparent" r="65" stroke="currentColor" stroke-dasharray="408" stroke-dashoffset="85" stroke-linecap="round" stroke-width="10"></circle>
+<circle class="text-primary opacity-30" cx="80" cy="80" fill="transparent" r="48" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-tertiary-fixed" cx="80" cy="80" fill="transparent" r="48" stroke="currentColor" stroke-dasharray="301" stroke-dashoffset="40" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-md text-headline-md text-secondary-fixed">98.4</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Palate Score</span>
+</div>
+</div>
+<!-- Metrics -->
+<div class="flex flex-col gap-4 w-full">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-1">
+<span class="text-surface-container-highest">Aroma Diffusion</span>
+<span class="text-secondary-fixed">96%</span>
+</div>
+<div class="h-2 w-full bg-primary rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed w-[96%] rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-1">
+<span class="text-surface-container-highest">Cleanliness (Zero Film)</span>
+<span class="text-tertiary-fixed">100%</span>
+</div>
+<div class="h-2 w-full bg-primary rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-fixed w-full rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm uppercase mb-1">
+<span class="text-surface-container-highest">Champagne Effervescence</span>
+<span class="text-secondary-fixed">92%</span>
+</div>
+<div class="h-2 w-full bg-primary rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed w-[92%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-primary/40 flex items-center justify-between font-body-sm text-body-sm text-primary-fixed-dim">
+<span>Dual Varietals: Mix Berries &amp; Sparkling Peach</span>
+<a class="inline-flex items-center gap-1 text-secondary-fixed hover:text-surface transition-colors font-label-sm text-label-sm uppercase" data-path="our-products" href="#">Explore Products <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<!-- Product imagery preview -->
+<div class="grid grid-cols-2 gap-4">
+<div class="rounded-xl overflow-hidden bg-surface-container shadow-sm h-48">
+<img class="w-full h-full object-cover" data-alt="Close up editorial luxury photo of a glistening chilled ADLER beverage can with moisture droplets surrounded by fresh ripe blackberries, raspberries, and dark forest berries with warm golden backlighting and rich violet shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUGxAkrY4AnRdpKBuqSKvPiblOryZZa9kISIEWbyfZKOisbbhSlGQq6qbI2rBAe8HF6iH6IUyrc981SQ8nFcW6TMJpEBYly2JMX7UtWnjaS6BOVZQxz2qtiUF6ikme2-NXAyop-V8jgE_Sx15iL5HEXgMuvZNCb65LKXNymBCMcVzEZ9xU_mORpd8_JJ4YI3oPT47w1LP279zLq06FvTbWqjSD5p_y28FTbBdBmVACa8H-feObyRr4Xg"/>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container shadow-sm h-48">
+<img class="w-full h-full object-cover" data-alt="Chilled ADLER Peach Sparks aluminum can sitting on a frosted polished glass slab with golden peach slices, delicate botanical green leaves, and soft morning sunlight refractions in a luxury minimalist studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZxUoFqpTE-Vy3UZtA17RDzBiiRAc8VCrc-4q76fXq5qcMEfDLlNWvBGk3NZiAiNF7NycazTOHuZziM6Z-5ua_tyTSScY0KgwBb4Qs485AfMSlgM9DW2P7keR5UtWkAwkcuFYjhsVx9xUqY2KCZohs8NSasgujsTPj92kagFqeCS2mjpP9sPBVunG6lp1qYjfr0ZRWzCbqV44bBwBELtoWYD_65CZZ3ll_hyAYdQT8vF9u5-B4aHlrFQ"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: PREMIUM BRAND IDENTITY -->
+<section class="w-full py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="max-w-3xl mb-16">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold mb-3 block">02 // Unapologetic Prestige &amp; Visual Poise</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-4">
+          AN ICON OF SOVEREIGN INTELLECT &amp; SHARP RESOLVE
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Inspired by the majestic raptor, the eagle—synonymous with laser-sharp focus, aerial poise, and unclouded vision. ADLER is not merely an energy drink; it is designed as an aspirational accessory for metropolitan boardrooms, creative studios, elite athletic spaces, and exclusive private clubs.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="rounded-2xl p-8 bg-surface-container-lowest shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">Tactile Matte Metallic</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Crafted with a specialized soft-touch tactile matte finish on aerospace-grade aluminum that feels weighted, balanced, and instantly distinguishable in hand.
+            </p>
+</div>
+<div class="mt-8 pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-base">verified</span> Sensory Grip Finish
+          </div>
+</div>
+<!-- Card 2 -->
+<div class="rounded-2xl p-8 bg-surface-container-lowest shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-fixed text-2xl">shield</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">Embossed Eagle Crest</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Every chassis features the regal golden eagle silhouette, hot-stamped to symbolize predatory focus, elevated perception, and calm dominion over chaos.
+            </p>
+</div>
+<div class="mt-8 pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-base">verified</span> Sovereign Brand Signet
+          </div>
+</div>
+<!-- Card 3 -->
+<div class="rounded-2xl p-8 bg-surface-container-lowest shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">Editorial Clarity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Refined typographic spacing and architectural grid discipline ensure that ADLER looks distinguished alongside luxury horology, fountain pens, and laptops.
+            </p>
+</div>
+<div class="mt-8 pt-4 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-base">verified</span> Designed for Elite Spaces
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CLINICAL FORMULATION & PURITY STANDARDS -->
+<section class="w-full py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Visual Purity Lab Column -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="rounded-2xl overflow-hidden bg-surface-container shadow-lg relative">
+<img class="w-full h-80 object-cover" data-alt="High-tech analytical beverage laboratory showing pristine glassware, calibrated liquid spectroscopy equipment, green botanical leaves and golden amber elixir drops under clean cinematic studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4tCUD-gMcKoQJwlTNikWmq72hHH8vopPdK7Y4zf8QG8BKsE46vjAeuaQcFjh_j_NylXk3hsBh5xnnij6NQIjzm7cO3pOHcBM0QAaGk4nZyE9PjX90v5ZDTExB1hfu7js1B5VcWKyIDrYtN_VUZZpGU1MeGV0mIpvjtIBRiwF9zXr7TKczVoWRlN-C1vmLti1fvZsMULgtyQc-B9XHV8zR7-83ExewTK22tgiL20KZ162sg-ZKgHNgAA"/>
+<div class="p-6 bg-surface-container-highest">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-2xl">science</span>
+<span class="font-headline-sm text-headline-sm text-primary">Certified cGMP Facility</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Every batch is subjected to 48-point laboratory spectroscopy testing prior to canning, verifying absolute microbiological safety and molecular consistency.
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Content & Pillars -->
+<div class="lg:col-span-7 flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold mb-3">03 // Clinical Formulation &amp; Purity Standards</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-6">
+            WHAT WE REMOVED MATTERS AS MUCH AS WHAT WE ADDED
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+            Mainstream energy beverages flood the bloodstream with synthetic taurine, cheap high-fructose corn syrups, and petrochemical dyes that trigger cardiac palpitations and severe adrenal depletion. ADLER replaces cheap stimulants with bio-compatible botanical compounds.
+          </p>
+<!-- 4 Pillars Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-fixed text-lg">block</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Zero Refined Sugar</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sweetened subtly via non-glycemic stevia reb-M leaves. No blood sugar spikes, zero keto disruption.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-lg">eco</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">100% Vegetarian</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Certified Green Dot compliant. Absolutely free from animal-derived gelatin, clarifying agents, or synthetic carmine.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">sync_alt</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">1:1 Neuro-Synergy</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standardized pharmaceutical-grade L-Theanine paired 1:1 with natural caffeine for sustained alpha-wave brain rhythm.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-fixed text-lg">psychology</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Green Coffee Origin</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pure unroasted raw green coffee bean extract providing 75mg clean caffeine with rich natural chlorogenic acids.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CONTEMPORARY PRODUCT DEVELOPMENT & NEUROSCIENCE -->
+<section class="w-full py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="max-w-3xl mb-16">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold mb-3 block">04 // Cognitive Science Meets Modern Palates</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-4">
+          SMOOTH SUSTAINED NEURO-LIFT VS. SYNTHETIC ENERGY CRASH
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          When high-dose synthetic caffeine hits the system alone, it triggers rapid vasoconstriction and adrenal over-activation. ADLER introduces an organic counterweight: botanical L-Theanine stimulates inhibitory neurotransmitters, smoothing out heart-rate spikes and sustaining an intense, calm flow state for 4 to 6 continuous hours.
+        </p>
+</div>
+<!-- Comparative Chart & Timeline Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-8 lg:p-12 shadow-md">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Pharmacokinetic Energy Profile Over Time</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clinical tracking of cognitive alertness and subjective jitter scores (Hours 0 to 6)</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold">ADLER Botanical Synergy</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Standard 250ml Energy Drink</span>
+</div>
+</div>
+</div>
+<!-- Inline SVG Visualization -->
+<div class="w-full h-64 relative mb-6">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 900 240">
+<!-- Grid Lines -->
+<line class="text-outline-variant opacity-25" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="900" y1="40" y2="40"></line>
+<line class="text-outline-variant opacity-25" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="900" y1="100" y2="100"></line>
+<line class="text-outline-variant opacity-25" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="900" y1="160" y2="160"></line>
+<line class="text-outline-variant opacity-40" stroke="currentColor" x1="0" x2="900" y1="220" y2="220"></line>
+<!-- Red line: Generic Energy Drink Spike and Collapse -->
+<path d="M 0 220 C 60 120, 100 20, 160 20 C 230 20, 270 180, 400 225 C 550 235, 750 235, 900 235" fill="none" stroke="#ba1a1a" stroke-linecap="round" stroke-width="3"></path>
+<!-- Red peak marker -->
+<circle cx="160" cy="20" fill="#ba1a1a" r="5"></circle>
+<!-- Purple & Gold line: ADLER Smooth Plateau -->
+<path d="M 0 220 C 80 180, 140 85, 240 75 C 380 65, 580 75, 720 110 C 820 135, 870 170, 900 185" fill="none" stroke="#2b0d47" stroke-linecap="round" stroke-width="4"></path>
+<path d="M 0 220 C 80 180, 140 85, 240 75 C 380 65, 580 75, 720 110 C 820 135, 870 170, 900 185 L 900 220 L 0 220 Z" fill="url(#adlerGradient)" opacity="0.12"></path>
+<defs>
+<lineargradient id="adlerGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#2b0d47"></stop>
+<stop offset="100%" stop-color="#2b0d47" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- ADLER plateau marker -->
+<circle cx="240" cy="75" fill="#2b0d47" r="5"></circle>
+<circle cx="580" cy="75" fill="#775a19" r="5"></circle>
+</svg>
+</div>
+<!-- Timeline X-Axis markers -->
+<div class="grid grid-cols-4 md:grid-cols-7 text-center font-label-sm text-label-sm text-on-surface-variant pt-2 border-t border-surface-container">
+<div>Hour 0<span class="block text-xs font-normal opacity-70">Consumption</span></div>
+<div>Hour 1<span class="block text-xs font-normal opacity-70">Rapid Uptake</span></div>
+<div>Hour 2<span class="block text-xs font-normal opacity-70">Alpha-Wave Focus</span></div>
+<div>Hour 3<span class="block text-xs font-normal opacity-70">Flow State Plateau</span></div>
+<div>Hour 4<span class="block text-xs font-normal opacity-70">Sustained Stamina</span></div>
+<div>Hour 5<span class="block text-xs font-normal opacity-70">Gentle Taper</span></div>
+<div>Hour 6<span class="block text-xs font-normal opacity-70">Baseline Rest</span></div>
+</div>
+<!-- Key Takeaway callout -->
+<div class="mt-8 p-4 rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">insights</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Result: Zero tremoring, zero post-sugar fatigue, 3.8x longer sustained task retention.</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase px-3 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-bold tracking-wider">Independent Lab Validated</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: INDIAN ORIGINS WITH GLOBAL AMBITIONS -->
+<section class="w-full py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Content left -->
+<div class="lg:col-span-6 flex flex-col">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm uppercase font-semibold mb-4 w-fit">
+<span class="material-symbols-outlined text-sm">public</span>
+            Himalayan Flora • International Benchmark
+          </div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold mb-3">05 // Conceived in India, Engineered for the World</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-6">
+            ROOTED IN ROYAL INDIAN WELLNESS, READY FOR GLOBAL METROPOLISES
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Born in the high-velocity innovation hubs of Mumbai and Bengaluru, ADLER fuses India’s millennia of botanical mastery with rigorous contemporary food science. While honoring authentic regional ingredients, every formulation is compliant with European EFSA and US FDA dietary safety norms.
+          </p>
+<div class="grid grid-cols-2 gap-4 mt-2">
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">Mumbai &amp; BLR</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Formulation &amp; R&amp;D Labs</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-headline-sm text-headline-sm text-secondary block mb-1">ISO 22000</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Food Safety Management</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-headline-sm text-headline-sm text-on-tertiary-container block mb-1">FSSAI Certified</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Central License Tier-1</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary block mb-1">London &amp; Dubai</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">2026 Export Corridors</span>
+</div>
+</div>
+</div>
+<!-- Global Map Visual right -->
+<div class="lg:col-span-6 flex flex-col">
+<div class="rounded-2xl overflow-hidden bg-primary-container p-8 shadow-xl text-on-primary relative">
+<div class="flex items-center justify-between mb-6">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed block">Global Supply Nodes</span>
+<h4 class="font-headline-sm text-headline-sm text-on-primary">Cold-Chain Distribution Network</h4>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed text-3xl">flight_takeoff</span>
+</div>
+<!-- Stylized World Route Map visual container -->
+<div class="w-full h-64 rounded-xl bg-cover bg-center overflow-hidden mb-6 relative" data-location="Mumbai, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCauSb8B4ue2xZ2qMiqx3uwGzqD1Leg9LUJu7Kei2Fnn1fd3Sl7gXmRjC9cYHSqhjD8Zw2T-Df0dWyN8uSL1fGhE6CkXn8KJU3i5-YCRvBUXt-we7XZU9Gy8R1wLdzBcr8l57ImJps8K3NKFsyB_F992Jhx7Wm9rWNdR_sXG2dCPOSVfoFCbtX2pp0kYlD8a7v_D6w2rCGRhI2hnQpnPKxsUje_M3K6y_7m8Ep3hmVG_OIrQanGKvi4Ag')">
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px] flex items-center justify-center p-6 text-center">
+<div class="p-4 rounded-xl bg-surface/90 text-primary shadow-lg max-w-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">verified</span>
+<p class="font-label-md text-label-md font-bold uppercase mt-1">Direct Factory to Global Shelves</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Temperature-controlled nitrogen flushed storage ensuring 12-month organoleptic stability.</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-primary-fixed-dim font-label-sm text-label-sm uppercase">
+<span>Origin: Western Ghats Botanicals</span>
+<span>Hubs: IN • UAE • UK (Q2)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: INTERNATIONALLY INSPIRED DESIGN & FUTURE VISION -->
+<section class="w-full py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="max-w-3xl mb-16">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold mb-3 block">06 // Sustainable Innovation &amp; The 2030 Horizon</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-4">
+          CIRCULAR LUXURY PACKAGING &amp; NEXT-GEN ADAPTOGENS
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          True prestige cannot exist at the expense of ecological health. ADLER operates on zero single-use plastics across our direct wholesale packing, housing each elixir in infinitely recyclable 250ml slim aluminum cylinders protected by advanced BPA-NI liners.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<!-- Feature 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-2xl">recycling</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">100% Infinite Aluminum</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Aluminum recycles indefinitely without loss of tensile integrity. Over 75% of all aluminum ever produced remains in productive circulation today.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wider font-bold mt-6">Closed Loop Lifecycle</span>
+</div>
+<!-- Feature 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">health_and_safety</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">BPA-NI Non-Intent Liner</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Every interior can wall is layered with a clean organic lacquer barrier, ensuring zero endocrine disruptors and absolute preservation of crisp floral notes.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold mt-6">Zero Leaching Certified</span>
+</div>
+<!-- Feature 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-fixed text-2xl">psychiatry</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">Q4 Adaptogen Pipeline</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Our future laboratory roadmap encompasses cold-brewed sparkling tea varietals, holy basil extracts, and functional Lion's Mane mushroom spritzes.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold mt-6">R&amp;D Pipeline 2025–2026</span>
+</div>
+</div>
+<!-- Sustainability Banner Strip -->
+<div class="p-8 rounded-2xl bg-gradient-to-r from-surface-container to-surface-container-high flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-secondary text-3xl">nature_people</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Zero Plastic Distribution Guarantee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">All palletised freight and B2B multi-packs utilize 100% recycled unbleached kraft card stock and water-based inks.</p>
+</div>
+</div>
+<div class="shrink-0">
+<span class="px-5 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm">Verified FSC Mix</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: CLOSING B2B CONVERSION BANNER -->
+<section class="w-full py-20 bg-primary-container text-on-primary relative overflow-hidden">
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary-fixed/15 blur-3xl pointer-events-none"></div>
+<div class="absolute left-10 top-0 w-80 h-80 rounded-full bg-primary/40 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest/20 text-secondary-fixed font-label-sm text-label-sm uppercase font-semibold mb-4">
+<span class="material-symbols-outlined text-sm">storefront</span> Commercial Partnerships
+          </div>
+<h2 class="font-headline-xl text-headline-xl uppercase tracking-tight mb-4 text-on-primary">
+            ELEVATE YOUR SHELVES WITH ADLER.
+          </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed">
+            Partner with India’s most visionary caffeinated elixir brand. From luxury boutique hospitality and modern retail to high-performance workspace pantries and fitness sanctuaries.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full lg:w-auto">
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg uppercase tracking-wider hover:bg-secondary-fixed transition-all shadow-md" data-path="partner-with-us" href="#">
+            BECOME A STOCKIST
+            <span class="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-surface/10 hover:bg-surface/20 text-on-primary font-label-lg text-label-lg uppercase tracking-wider transition-all" data-path="partner-with-us" href="#">
+<span class="material-symbols-outlined mr-2 text-lg">description</span>
+            DOWNLOAD BRAND DECK (.PDF)
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container py-16 shadow-[0_1px_8px_rgba(35,22,16,0.04)]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"><div><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-secondary-fixed text-lg">bolt</span></div><span class="font-headline-sm text-headline-sm text-primary uppercase">ADLER BEVERAGES</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Where Health Meets Refreshment. India's premier caffeinated botanical elixirs, crafted for unrelenting clarity, natural sustained energy, and cognitive vitality.</p><div class="flex items-center gap-2"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm uppercase"><span class="material-symbols-outlined text-sm">spa</span> 100% Clean Caffeine</span><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase">Zero Crash</span></div></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Quick Links</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home Overview</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="about-us" href="#">The ADLER Heritage</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-products" href="#">Elixir Collection</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="why-adler" href="#">The Eagle Science</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">Global Distribution</a></li></ul></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Functional Line</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-products" href="#">Mix Berry Sparks 250ml</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-products" href="#">Peach Sparks 250ml</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="our-products" href="#">Upcoming Botanicals (Q4)</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="why-adler" href="#">Nutritional Integrity Lab</a></li></ul></div><div><h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">B2B &amp; Concierge</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">Distributor Enquiries</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">Corporate &amp; Retailer Tie-ups</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">Gyms &amp; Premium Cafes</a></li><li class="font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="partner-with-us" href="#">WhatsApp VIP Concierge</a></li></ul></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 ADLER BEVERAGES PVT. LTD. All rights reserved. Made in India for the Focused Mind.</p><div class="flex items-center gap-6 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-tertiary-fixed-dim text-sm">verified</span> GMP Certified</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-sm">eco</span> Botanical Sourced</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary-container text-sm">military_tech</span> FSSAI Approved</span></div></div></div></footer></body></html>

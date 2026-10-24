@@ -1,0 +1,150 @@
+/* Royal Botanical Luxe - Design Tokens & Core Styles */
+:root {
+  /* Brand Palette */
+  --color-primary: #080016;
+  --color-primary-container: #2b0d47;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #9878b7;
+  --color-primary-fixed: #f0dbff;
+  --color-primary-fixed-dim: #dcb8fc;
+  --color-on-primary-fixed: #290a45;
+  --color-on-primary-fixed-variant: #573974;
+
+  --color-secondary: #775a19;
+  --color-secondary-container: #fed488;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #785a1a;
+  --color-secondary-fixed: #ffdea5;
+  --color-secondary-fixed-dim: #e9c176;
+  --color-on-secondary-fixed: #261900;
+  --color-on-secondary-fixed-variant: #5d4201;
+
+  --color-tertiary: #000500;
+  --color-tertiary-container: #012400;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #539544;
+  --color-tertiary-fixed: #adf598;
+  --color-tertiary-fixed-dim: #92d87f;
+  --color-on-tertiary-fixed: #012200;
+  --color-on-tertiary-fixed-variant: #0f5308;
+
+  --color-surface: #fff8f6;
+  --color-surface-dim: #eed5cb;
+  --color-surface-bright: #fff8f6;
+  --color-surface-variant: #f7ddd3;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff1eb;
+  --color-surface-container: #ffeae1;
+  --color-surface-container-high: #fde3d8;
+  --color-surface-container-highest: #f7ddd3;
+
+  --color-on-surface: #261912;
+  --color-on-surface-variant: #4b454e;
+  --color-outline: #7c747f;
+  --color-outline-variant: #cdc3cf;
+  --color-surface-tint: #70518d;
+
+  --color-background: #fff8f6;
+  --color-on-background: #261912;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* Typography */
+  --font-headline: 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  /* Shadows */
+  --shadow-ambient: 0 4px 20px -2px rgba(35, 22, 16, 0.06);
+  --shadow-ambient-hover: 0 12px 32px -4px rgba(43, 13, 71, 0.12);
+  --shadow-gold: 0 8px 24px -2px rgba(119, 90, 25, 0.2);
+}
+
+/* Global Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container-low);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* Material Symbols Outlined settings */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom glow & radiance helpers */
+.royal-glow {
+  box-shadow: 0 0 35px rgba(43, 13, 71, 0.35);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(254, 212, 136, 0.4);
+}
+
+/* Luxury transitions */
+.transition-luxury {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Subtle image drop-shadows */
+.drop-shadow-can {
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.45));
+}
+
+.drop-shadow-purple {
+  filter: drop-shadow(0 14px 28px rgba(43, 13, 71, 0.3));
+}
+
+.drop-shadow-gold {
+  filter: drop-shadow(0 14px 28px rgba(119, 90, 25, 0.3));
+}
