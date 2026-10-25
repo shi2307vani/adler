@@ -1,37 +1,39 @@
 import React from 'react';
 import { useNavigation } from '../../../context/NavigationContext';
 import Button from '../../atoms/Button/Button';
-import Icon from '../../atoms/Icon/Icon';
 
 export default function ProductShowcaseCard({ product, theme = 'purple' }) {
   const { navigateTo } = useNavigation();
   const isPurple = theme === 'purple';
 
   return (
-    <div className="group rounded-2xl bg-surface-container-lowest overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl flex flex-col justify-between border border-secondary/10">
+    <div
+      onClick={() => navigateTo('our-products', product.id)}
+      className="group rounded-3xl bg-white overflow-hidden shadow-[0_15px_45px_rgba(28,25,36,0.06)] hover:shadow-[0_25px_65px_rgba(28,25,36,0.14)] transition-all duration-500 flex flex-col justify-between border border-slate-100 hover:border-slate-300/80 cursor-pointer"
+    >
       <div className="p-8 sm:p-10 flex flex-col">
         {/* Top Header */}
         <div className="flex items-center justify-between">
           <span
-            className={`px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold tracking-wider uppercase shadow-xs ${
+            className={`px-3.5 py-1.5 rounded-full font-label-sm text-label-sm font-bold tracking-wider uppercase shadow-xs ${
               isPurple
-                ? 'bg-primary-container text-on-primary'
-                : 'bg-secondary-container text-on-secondary-fixed'
+                ? 'bg-primary-container text-white border border-amber-300/30'
+                : 'bg-gradient-to-r from-[#FF6B35] to-[#FFA07A] text-white shadow-md shadow-orange-500/25'
             }`}
           >
             {isPurple ? 'Antioxidant Focus' : 'Electrolyte Renewal'}
           </span>
-          <span className="font-label-md text-label-md font-bold text-secondary tracking-wider">
+          <span className="font-label-md text-label-md font-bold text-amber-600 tracking-wider">
             250 ML SLIM CAN
           </span>
         </div>
 
         {/* Name & Summary */}
         <div className="mt-6">
-          <h3 className="font-headline-lg text-headline-lg text-primary-container font-bold">
+          <h3 className="font-headline-lg text-headline-lg text-primary-container font-extrabold group-hover:text-primary transition-colors">
             {product.name}
           </h3>
-          <p className="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+          <p className="font-body-md text-body-md text-slate-600 mt-2 leading-relaxed">
             {product.description}
           </p>
         </div>
@@ -41,10 +43,12 @@ export default function ProductShowcaseCard({ product, theme = 'purple' }) {
           {product.badges.map((badge, idx) => (
             <span
               key={idx}
-              className={`px-3 py-1 rounded font-label-sm text-label-sm ${
-                idx === product.badges.length - 1
-                  ? 'bg-surface-container text-on-tertiary-container font-semibold'
-                  : 'bg-surface-container text-primary-container'
+              className={`px-3 py-1 rounded-lg font-label-sm text-label-sm font-semibold ${
+                !isPurple
+                  ? 'bg-orange-50 text-[#FF6B35] border border-orange-100'
+                  : idx === product.badges.length - 1
+                  ? 'bg-emerald-50 text-emerald-800 border border-emerald-100'
+                  : 'bg-purple-50 text-primary-container border border-purple-100'
               }`}
             >
               {badge}
@@ -53,34 +57,43 @@ export default function ProductShowcaseCard({ product, theme = 'purple' }) {
         </div>
       </div>
 
-      {/* Product Image & CTA Bar */}
+      {/* Larger Product Image & CTA Bar */}
       <div
-        className={`relative pt-4 pb-8 px-8 flex flex-col items-center ${
+        className={`relative pt-6 pb-8 px-8 flex flex-col items-center overflow-hidden ${
           isPurple
-            ? 'bg-gradient-to-t from-primary/10 via-transparent to-transparent'
-            : 'bg-gradient-to-t from-secondary-container/20 via-transparent to-transparent'
+            ? 'bg-gradient-to-t from-purple-900/10 via-amber-400/5 to-transparent'
+            : 'bg-gradient-to-t from-[#FF6B35]/15 via-amber-400/5 to-transparent'
         }`}
       >
-        <div className="h-64 sm:h-72 w-full flex items-center justify-center">
+        {/* Soft Aura Ring */}
+        <div
+          className={`absolute bottom-16 w-56 h-20 rounded-full blur-2xl pointer-events-none transition-transform duration-500 group-hover:scale-125 ${
+            isPurple ? 'bg-purple-600/15' : 'bg-[#FF6B35]/25'
+          }`}
+        />
+
+        {/* Large can visual */}
+        <div className="h-80 sm:h-96 lg:h-[420px] w-full flex items-center justify-center relative z-10">
           <img
             alt={product.name}
             src={product.image}
-            className={`h-full object-contain transition-transform duration-500 group-hover:scale-105 ${
+            className={`h-full w-auto max-h-[420px] object-contain transition-transform duration-700 group-hover:scale-105 ${
               isPurple
-                ? 'filter drop-shadow-[0_12px_24px_rgba(43,13,71,0.25)]'
-                : 'filter drop-shadow-[0_12px_24px_rgba(119,90,25,0.25)]'
+                ? 'filter drop-shadow-[0_20px_35px_rgba(43,13,71,0.32)]'
+                : 'filter drop-shadow-[0_20px_35px_rgba(255,107,53,0.32)]'
             }`}
           />
         </div>
 
-        <div className="w-full flex items-center justify-between mt-6 pt-6 bg-surface-container-lowest/90 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-secondary/10">
+        {/* Bottom Serving Bar */}
+        <div className="w-full flex items-center justify-between mt-8 pt-6 bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-100 relative z-10">
           <div>
-            <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-medium">
+            <span className="font-label-sm text-label-sm text-slate-500 uppercase tracking-wider block font-semibold">
               Serving profile
             </span>
             <p
-              className={`font-headline-sm text-headline-sm font-bold ${
-                isPurple ? 'text-primary-container' : 'text-secondary'
+              className={`font-headline-sm text-headline-sm font-extrabold ${
+                isPurple ? 'text-primary-container' : 'text-[#FF6B35]'
               }`}
             >
               {product.servingProfile}
@@ -88,10 +101,13 @@ export default function ProductShowcaseCard({ product, theme = 'purple' }) {
           </div>
 
           <Button
-            variant={isPurple ? 'primary' : 'gold'}
+            variant={isPurple ? 'gold' : 'peach'}
             size="sm"
             icon="north_east"
-            onClick={() => navigateTo('our-products', product.id)}
+            onClick={(e) => {
+              e.stopPropagation();
+              navigateTo('our-products', product.id);
+            }}
           >
             View Details
           </Button>

@@ -5,10 +5,10 @@ export default function TrackCard({ track, onSelect }) {
   return (
     <div
       onClick={onSelect}
-      className="group relative rounded-xl bg-surface-container-lowest p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-secondary/10 transform hover:-translate-y-1"
+      className="group relative rounded-2xl bg-white p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer border border-slate-100 hover:border-orange-200 transform hover:-translate-y-1"
     >
       <div
-        className={`absolute -top-3 left-6 px-3 py-0.5 rounded-full font-label-sm text-label-sm uppercase tracking-widest font-bold shadow-xs ${track.badgeClass}`}
+        className={`absolute -top-3 left-6 px-3.5 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-widest font-extrabold shadow-sm ${track.badgeClass}`}
       >
         {track.track}
       </div>

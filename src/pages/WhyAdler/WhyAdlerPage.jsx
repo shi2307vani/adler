@@ -13,36 +13,34 @@ export default function WhyAdlerPage() {
   return (
     <div className="flex flex-col w-full">
       {/* SECTION 0: HERO HEADER */}
-      <section className="relative w-full overflow-hidden bg-surface-container-low py-20 lg:py-28 border-b border-secondary/10">
-        <div className="absolute -top-32 right-10 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none" />
+      <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#f8fafd] via-white to-white py-20 lg:py-28 border-b border-slate-100">
+        <div className="absolute -top-32 right-10 w-96 h-96 rounded-full bg-amber-200/30 blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-[#FF6B35]/15 blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
           <div className="flex flex-col items-start max-w-4xl">
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface shadow-sm mb-6 border border-secondary/20">
-              <span className="w-2 h-2 rounded-full bg-secondary" />
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">
-                THE ARCHITECTURE OF UNCOMPROMISING BEVERAGE CRAFT
-              </span>
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-orange-50 text-[#FF6B35] shadow-xs mb-6 border border-orange-200/60 font-label-sm text-label-sm uppercase tracking-widest font-extrabold">
+              <span className="w-2 h-2 rounded-full bg-[#FF6B35]" />
+              THE ARCHITECTURE OF UNCOMPROMISING BEVERAGE CRAFT
             </div>
 
-            <h1 className="font-headline-xl text-headline-xl sm:text-5xl lg:text-6xl text-primary uppercase tracking-tight mb-6 font-extrabold leading-[1.08]">
+            <h1 className="font-headline-xl text-headline-xl sm:text-5xl lg:text-6xl text-primary-container uppercase tracking-tight mb-6 font-extrabold leading-[1.08]">
               WHY ADLER REWRITES THE DRINKING EXPERIENCE
             </h1>
 
-            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+            <p className="font-body-lg text-body-lg text-slate-600 max-w-2xl mb-10 leading-relaxed">
               A radical synthesis of physiological performance, artisanal sensorial bliss, and responsible luxury packaging.
               We engineered an elixir that honours both your cognitive edge and your refined palate.
             </p>
 
-            {/* Stats strip */}
-            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-xl bg-surface-container-lowest shadow-md border border-secondary/15">
+            {/* Stats strip in crisp white cards */}
+            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-white shadow-[0_15px_40px_rgba(28,25,36,0.06)] border border-slate-100">
               {BRAND_STATS.map((stat, idx) => (
                 <div key={idx} className="flex flex-col">
-                  <span className={`font-headline-lg text-headline-lg font-extrabold ${stat.color}`}>
+                  <span className={`font-headline-lg text-headline-lg font-extrabold ${idx === 1 ? 'text-[#FF6B35]' : stat.color}`}>
                     {stat.value}
                   </span>
-                  <span className="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold mt-1">
+                  <span className="font-label-sm text-label-sm uppercase tracking-wider text-slate-500 font-bold mt-1">
                     {stat.label}
                   </span>
                 </div>
@@ -53,18 +51,18 @@ export default function WhyAdlerPage() {
       </section>
 
       {/* SECTION 1: DISTINCTIVE, MULTI-LAYERED FLAVOURS */}
-      <section className="w-full py-24 bg-surface border-b border-secondary/10">
+      <section className="w-full py-24 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left: Narrative & Sensory Architecture */}
             <div className="lg:col-span-6 flex flex-col">
-              <span className="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold mb-3">
+              <span className="font-label-md text-label-md uppercase tracking-widest text-[#FF6B35] font-extrabold mb-3">
                 01 // Distinctive, Multi-Layered Flavours
               </span>
-              <h2 className="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-6 font-extrabold">
+              <h2 className="font-headline-lg text-headline-lg text-primary-container uppercase tracking-tight mb-6 font-extrabold sm:text-4xl">
                 ELEVATED BOTANICALS OVER INDUSTRIAL SYRUPS
               </h2>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              <p className="font-body-md text-body-md text-slate-600 mb-6 leading-relaxed">
                 Breaking away from aggressive medicinal syrups, battery-acid aftertastes, and oversweetened industrial sodas.
                 ADLER extracts nuance from real botanical flora—wild Himalayan berries, crisp hand-pressed blackcurrants,
                 and sun-kissed white peaches paired with a micro-fine champagne effervescence.
@@ -76,45 +74,58 @@ export default function WhyAdlerPage() {
                   title="Top Notes"
                   time="0.0 – 1.5s"
                   icon="bubble_chart"
-                  iconBg="bg-secondary-fixed text-on-secondary-fixed"
+                  iconBg="bg-gradient-to-r from-[#FF6B35] to-[#FFA07A] text-white"
                   description="Vibrant floral aromatics, tart Alpine bilberry, and crisp mountain white peach aroma delivered on fine bubbles."
                 />
                 <SensoryArcItem
                   title="Mid Palate"
                   time="1.5 – 4.0s"
                   icon="spa"
-                  iconBg="bg-primary-container text-secondary-fixed"
+                  iconBg="bg-primary-container text-amber-300"
                   description="Smooth polyphenolic depth from ceremonial green tea extract; silky botanical body without syrupy coating."
                 />
                 <SensoryArcItem
                   title="Clean Dry Finish"
                   time="Post-Sip"
                   icon="clean_hands"
-                  iconBg="bg-tertiary-fixed text-on-tertiary-fixed-variant"
+                  iconBg="bg-emerald-50 text-emerald-700"
                   description="Subtle citric snap, zero tongue fatigue, zero sugar cloy, leaving the throat refreshed and receptive."
                 />
               </div>
             </div>
 
-            {/* Right: Sensory Wheel Card & Visual Showcase */}
+            {/* Right: Sensory Wheel Card & Large Visual Showcase */}
             <div className="lg:col-span-6 flex flex-col gap-6">
               <SensoryRadar />
 
-              {/* Product imagery preview */}
+              {/* Product imagery preview (Much Larger & Luminous) */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-xl overflow-hidden bg-gradient-to-b from-primary/80 to-primary-container shadow-sm h-48 border border-secondary/15 flex items-center justify-center p-3 group">
+                <div
+                  onClick={() => navigateTo('our-products', 'mix-berry-sparks')}
+                  className="rounded-2xl overflow-hidden bg-gradient-to-b from-purple-50 via-white to-white shadow-sm hover:shadow-lg h-72 sm:h-80 border border-purple-100 flex flex-col items-center justify-center p-4 group cursor-pointer transition-all"
+                >
                   <img
-                    className="h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_12px_24px_rgba(43,13,71,0.4)]"
+                    className="h-full w-auto max-h-[260px] object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_16px_28px_rgba(43,13,71,0.25)]"
                     alt="ADLER Mix Berry Sparks 250ml Can"
                     src="/images/mix-berries.png?v=2"
                   />
+                  <span className="font-label-sm text-label-sm uppercase font-extrabold text-primary-container mt-2">
+                    Mix Berry Sparks
+                  </span>
                 </div>
-                <div className="rounded-xl overflow-hidden bg-gradient-to-b from-[#3a1d10]/80 to-primary-container shadow-sm h-48 border border-secondary/15 flex items-center justify-center p-3 group">
+
+                <div
+                  onClick={() => navigateTo('our-products', 'peach-sparks')}
+                  className="rounded-2xl overflow-hidden bg-gradient-to-b from-orange-50 via-white to-white shadow-sm hover:shadow-lg h-72 sm:h-80 border border-orange-100 flex flex-col items-center justify-center p-4 group cursor-pointer transition-all"
+                >
                   <img
-                    className="h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_12px_24px_rgba(119,90,25,0.4)]"
+                    className="h-full w-auto max-h-[260px] object-contain transition-transform duration-500 group-hover:scale-105 filter drop-shadow-[0_16px_28px_rgba(255,107,53,0.3)]"
                     alt="ADLER Peach Sparks 250ml Can"
                     src="/images/peach-sparks.png?v=2"
                   />
+                  <span className="font-label-sm text-label-sm uppercase font-extrabold text-[#FF6B35] mt-2">
+                    Peach Sparks
+                  </span>
                 </div>
               </div>
             </div>

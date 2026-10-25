@@ -109,23 +109,23 @@ export default function PartnerWithUsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Visuals from Inspiration: 2 Elegant Beverage Shots */}
             <div className="lg:col-span-5 grid grid-cols-2 gap-4">
-              <div className="rounded-xl overflow-hidden shadow-md h-72 lg:h-96 relative group border border-secondary/15 bg-gradient-to-b from-primary/80 to-primary-container p-4 flex flex-col items-center justify-center">
+              <div className="rounded-3xl overflow-hidden shadow-lg h-72 lg:h-[420px] relative group border border-purple-100 bg-gradient-to-b from-purple-50 via-white to-white p-6 flex flex-col items-center justify-center">
                 <img
-                  className="h-full w-auto object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.6)]"
+                  className="h-full w-auto max-h-[360px] object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-[0_20px_35px_rgba(43,13,71,0.25)]"
                   alt="ADLER Mix Berry Sparks slim aluminum can"
                   src="/images/mix-berries.png?v=2"
                 />
-                <div className="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-primary/90 backdrop-blur-sm text-secondary-fixed font-label-sm text-label-sm uppercase font-semibold border border-secondary/20">
+                <div className="absolute bottom-4 left-4 px-3 py-1.5 rounded-xl bg-primary-container text-white font-label-sm text-label-sm uppercase font-extrabold shadow-sm border border-amber-300/30">
                   Mix Berries 250ml
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-md h-72 lg:h-96 relative group mt-6 border border-secondary/15 bg-gradient-to-b from-[#3a1d10]/80 to-primary-container p-4 flex flex-col items-center justify-center">
+              <div className="rounded-3xl overflow-hidden shadow-lg h-72 lg:h-[420px] relative group mt-6 border border-orange-100 bg-gradient-to-b from-orange-50 via-white to-white p-6 flex flex-col items-center justify-center">
                 <img
-                  className="h-full w-auto object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.6)]"
+                  className="h-full w-auto max-h-[360px] object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-[0_20px_35px_rgba(255,107,53,0.3)]"
                   alt="ADLER Peach Sparks slim aluminum beverage can"
                   src="/images/peach-sparks.png?v=2"
                 />
-                <div className="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-primary/90 backdrop-blur-sm text-secondary-fixed font-label-sm text-label-sm uppercase font-semibold border border-secondary/20">
+                <div className="absolute bottom-4 left-4 px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#FF6B35] to-[#FFA07A] text-white font-label-sm text-label-sm uppercase font-extrabold shadow-sm shadow-orange-500/25">
                   Peach Sparks 250ml
                 </div>
               </div>

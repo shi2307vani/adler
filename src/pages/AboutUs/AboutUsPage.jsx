@@ -170,33 +170,33 @@ export default function AboutUsPage() {
       <section className="w-full bg-surface py-space-xl lg:py-24 px-margin-mobile lg:px-margin border-b border-secondary/10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-            {/* Visual Story Column */}
+            {/* Visual Story Column: Fresh Luminous Peach Showcase */}
             <div className="lg:col-span-5 relative">
-              <div className="relative rounded-xl overflow-hidden shadow-xl aspect-[4/5] bg-gradient-to-b from-[#3a1d10]/90 to-primary-container p-6 flex flex-col items-center justify-center border border-secondary/20">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(254,212,136,0.15),transparent_70%)] pointer-events-none" />
+              <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5] bg-gradient-to-b from-orange-50 via-white to-white p-8 flex flex-col items-center justify-center border border-orange-100 group">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,107,53,0.18),transparent_70%)] pointer-events-none" />
                 <img
                   src="/images/peach-sparks.png?v=2"
                   alt="ADLER Peach Sparks 250ml"
-                  className="h-full w-auto max-h-[360px] object-contain relative z-10 filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.6)]"
+                  className="h-full w-auto max-h-[380px] object-contain relative z-10 filter drop-shadow-[0_20px_35px_rgba(255,107,53,0.32)] transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-6 left-6 right-6 p-space-md bg-surface-container-lowest/95 backdrop-blur-md rounded-lg shadow-md border border-secondary/10 z-20">
+                <div className="absolute bottom-6 left-6 right-6 p-space-md bg-white/95 backdrop-blur-md rounded-2xl shadow-md border border-slate-100 z-20">
                   <div className="flex items-center gap-2 mb-1">
-                    <Icon name="verified_user" size="18px" className="text-secondary" />
-                    <span className="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-wider">
+                    <Icon name="verified_user" size="18px" className="text-[#FF6B35]" />
+                    <span className="font-label-sm text-label-sm text-primary-container uppercase font-extrabold tracking-wider">
                       The Purity Mandate
                     </span>
                   </div>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  <p className="font-body-sm text-body-sm text-slate-500 leading-relaxed">
                     No high-fructose syrups. No artificial colors. Only natural caffeine derived from green tea leaves and pure fruit essence.
                   </p>
                 </div>
               </div>
 
               {/* Decorative Stamp Overlap */}
-              <div className="hidden sm:flex absolute -top-6 -right-6 w-28 h-28 rounded-full bg-primary-container text-secondary-fixed p-3 shadow-xl items-center justify-center text-center flex-col border-2 border-secondary/30">
+              <div className="hidden sm:flex absolute -top-5 -right-5 w-24 h-24 rounded-full bg-gradient-to-br from-[#FF6B35] to-[#FFA07A] text-white p-3 shadow-xl items-center justify-center text-center flex-col border-2 border-white z-30">
                 <Icon name="workspace_premium" size="24px" />
-                <span className="font-label-sm text-[9px] uppercase tracking-wider font-bold mt-1">
-                  Authentic Royal Blend
+                <span className="font-label-sm text-[9px] uppercase tracking-wider font-extrabold mt-0.5">
+                  Royal Blend
                 </span>
               </div>
             </div>

@@ -4,12 +4,12 @@ import Footer from '../../organisms/Footer/Footer';
 
 export default function MainLayout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed">
+    <div className="min-h-screen flex flex-col bg-white font-body-md text-slate-800 antialiased selection:bg-[#FF6B35] selection:text-white">
       {/* Fixed Sticky Header */}
       <Header />
 
       {/* Main Content Area */}
-      <main className="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)] flex-1">
+      <main className="w-full pt-20 bg-white min-h-[calc(100vh-20rem)] flex-1">
         {children}
       </main>
 

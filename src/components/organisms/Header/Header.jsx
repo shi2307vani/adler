@@ -10,7 +10,7 @@ export default function Header() {
   const { navigateTo, mobileMenuOpen, setMobileMenuOpen } = useNavigation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(35,22,16,0.06)] border-b border-secondary/10">
+    <header className="fixed top-0 left-0 right-0 w-full z-50 bg-white/95 backdrop-blur-xl shadow-[0_4px_25px_-2px_rgba(28,25,36,0.05)] border-b border-slate-100">
       <div className="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md">
         {/* Brand Logo */}
         <Logo variant="header" />

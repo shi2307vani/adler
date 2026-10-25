@@ -33,13 +33,13 @@ export default function NavItem({ item, mobile = false }) {
       onClick={handleClick}
       className={`relative py-2 font-label-lg text-label-lg transition-colors tracking-wide cursor-pointer ${
         isActive
-          ? 'text-primary-container font-bold'
-          : 'text-on-surface-variant hover:text-primary-container'
+          ? 'text-primary-container font-extrabold'
+          : 'text-slate-600 hover:text-[#FF6B35]'
       }`}
     >
       <span>{item.label}</span>
       {isActive && (
-        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-secondary-container rounded-full" />
+        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-amber-400 to-[#FF6B35] rounded-full" />
       )}
     </a>
   );

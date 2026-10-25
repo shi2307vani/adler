@@ -24,17 +24,21 @@ export default function Button({
 
   const variantStyles = {
     primary:
-      'bg-primary-container text-on-primary hover:opacity-95 shadow-[0_4px_16px_rgba(43,13,71,0.25)] hover:shadow-[0_6px_22px_rgba(43,13,71,0.35)]',
+      'bg-primary-container text-white hover:bg-[#38105c] shadow-[0_4px_16px_rgba(43,13,71,0.25)] hover:shadow-[0_6px_22px_rgba(43,13,71,0.35)]',
     gold:
-      'bg-secondary-container text-on-secondary-fixed hover:bg-secondary-fixed-dim shadow-[0_4px_16px_rgba(119,90,25,0.2)] hover:shadow-lg',
+      'bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 text-[#291700] hover:from-amber-300 hover:to-amber-500 shadow-[0_4px_18px_rgba(212,175,55,0.35)] hover:shadow-[0_6px_24px_rgba(212,175,55,0.5)]',
+    peach:
+      'bg-gradient-to-r from-[#FF6B35] via-[#FF7A45] to-[#FFA07A] text-white hover:from-[#EA5319] hover:to-[#FF8E53] shadow-[0_4px_18px_rgba(255,107,53,0.35)] hover:shadow-[0_6px_24px_rgba(255,107,53,0.5)]',
     secondary:
-      'bg-surface-container-lowest text-primary-container hover:bg-surface-container shadow-sm hover:shadow-md',
+      'bg-white text-primary-container hover:bg-slate-50 border border-slate-200/80 shadow-xs hover:shadow-md',
     outline:
-      'bg-transparent border border-secondary text-primary-container hover:bg-secondary/10',
+      'bg-transparent border-2 border-secondary text-primary-container hover:bg-secondary/10',
+    'peach-outline':
+      'bg-transparent border-2 border-[#FF6B35] text-[#FF6B35] hover:bg-[#FF6B35]/10',
     glass:
-      'bg-surface-container-lowest/10 backdrop-blur-md text-on-primary hover:bg-surface-container-lowest/20',
+      'bg-white/15 backdrop-blur-md text-white border border-white/20 hover:bg-white/25 shadow-sm',
     ghost:
-      'bg-transparent text-primary-container hover:text-secondary'
+      'bg-transparent text-primary-container hover:text-peach'
   };
 
   const baseStyles =

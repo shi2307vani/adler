@@ -8,22 +8,25 @@ export default function Footer() {
   const { navigateTo } = useNavigation();
 
   return (
-    <footer className="w-full bg-surface-container-low text-on-surface border-t border-secondary/15">
+    <footer className="w-full bg-[#f8fafd] text-slate-800 border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
         {/* Top Directory Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl border-b border-surface-container-highest">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl border-b border-slate-200">
           {/* Brand Col */}
           <div className="lg:col-span-4 flex flex-col gap-space-md">
             <Logo variant="footer" />
-            <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-sm">
+            <p className="font-body-sm text-body-sm text-slate-500 leading-relaxed max-w-sm">
               ADLER BEVERAGES — Where Health Meets Refreshment. Born in India with global ambitions.
               Crafting caffeinated functional elixirs engineered for modern high-performance thinkers.
             </p>
             <div className="flex flex-wrap items-center gap-space-sm pt-space-xs">
-              <span className="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-tertiary-container font-label-sm text-label-sm">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-bold border border-emerald-200/60">
                 <Icon name="eco" size="14px" /> Clean Caffeine
               </span>
-              <span className="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 text-[#FF6B35] font-label-sm text-label-sm font-bold border border-orange-200/60">
+                <Icon name="sparkles" size="14px" /> Radiant Botanical
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-50 text-primary-container font-label-sm text-label-sm font-bold border border-purple-200/60">
                 <Icon name="verified" size="14px" /> Royal Heritage
               </span>
             </div>
